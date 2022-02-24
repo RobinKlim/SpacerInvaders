@@ -232,7 +232,7 @@ class Grid {
     };
 
     this.velocity = {
-      x: 2,
+      x: 3,
       y: 0,
     };
 
@@ -261,7 +261,7 @@ class Grid {
   }
 }
 
-logoTopRight.style.left = canvas.width - 70 + "px";
+logoTopRight.style.left = window.innerWidth / 2 + 218 + "px";
 
 const player = new Player();
 const projectiles = [];

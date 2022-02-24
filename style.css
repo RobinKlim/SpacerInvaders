@@ -7,6 +7,13 @@
   font-family: commandocommando, Arial, sans-serif;
 }
 
+html {
+  background-image: url(./images/AlienSurfGirl_Logotype_black.svg);
+  background-size: 150px;
+  background-repeat: initial;
+  background-color: rgb(174, 131, 185);
+}
+
 @font-face {
   font-family: "commandocommando";
   src: url("commando-webfont.eot?#iefix") format("embedded-opentype"),
@@ -14,6 +21,12 @@
     url("commando-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+}
+/*centerEverything*/
+
+body {
+  display: flex;
+  justify-content: center;
 }
 
 .scoreEl {
@@ -225,5 +238,5 @@
   width: 60px;
   left: 10px;
   top: 10px;
-  z-index: 0;
+  z-index: 30;
 }
