@@ -1,0 +1,229 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: commandocommando, Arial, sans-serif;
+}
+
+@font-face {
+  font-family: "commandocommando";
+  src: url("commando-webfont.eot?#iefix") format("embedded-opentype"),
+    url("commando-webfont.woff2") format("woff2"),
+    url("commando-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.scoreEl {
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  color: white;
+}
+
+.scoreEl2,
+.scoreEnd {
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  color: white;
+  transform: translateY(180px);
+  transition: all 2s cubic-bezier(0.17, 0.84, 0.44, 1);
+  opacity: 0;
+}
+
+.middleFont1000Class {
+  position: fixed;
+  display: grid;
+}
+
+.middleFont1000 {
+  font-size: 1rem;
+  z-index: 20;
+  justify-self: center;
+  align-self: center;
+  color: purple;
+  position: fixed;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+.middleFont10002 {
+  opacity: 0.8;
+  font-size: 5rem;
+  transform: rotate(385deg);
+}
+
+.middleImg {
+  justify-self: center;
+  align-self: center;
+  position: fixed;
+  z-index: 10;
+  opacity: 0;
+  transition: all 0.2s linear;
+  height: 0px;
+  overflow: hidden;
+}
+
+.middleImg2 {
+  opacity: 0.4;
+  height: auto;
+}
+
+/* Menu */
+
+.gameOverScreenOutsideOutside {
+  display: none;
+  position: fixed;
+  width: 400px;
+  height: 800px;
+  background-color: rgba(137, 43, 226, 0.2);
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+.gameOverScreenOutsideOutside2 {
+  opacity: 1;
+}
+
+.gameOverScreenOutside {
+  display: flex;
+  width: 300px;
+  border-radius: 1rem;
+  height: 700px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.gameOver {
+  color: white;
+  position: relative;
+  font-size: 3rem;
+  transition: all 0.4s cubic-bezier(0.17, 0.84, 0.44, 1);
+  transform: rotate(25deg) scale(5);
+  opacity: 0;
+}
+.gameOver2 {
+  opacity: 1;
+  transform: scale(1.2) rotate(25deg);
+}
+
+.outNow {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 0 2rem 0;
+  transform: rotate(-15deg);
+  color: rgb(238, 190, 31);
+  font-weight: 700;
+  text-decoration: underline;
+  transform: scale(5);
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.17, 0.84, 0.44, 1);
+}
+.outNow2 {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.spotify {
+  height: 60px;
+  opacity: 0;
+  transition: all 2s cubic-bezier(0.17, 0.84, 0.44, 1);
+  animation: bounce 2s infinite linear;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.spotify:hover {
+  transform: scale(1.2);
+  transition: all 0.4 ease;
+  filter: invert(58%) sepia(91%) saturate(533%) hue-rotate(2deg)
+    brightness(105%) contrast(93%);
+}
+
+.replay {
+  padding: 0.5rem;
+  transform: translateY(150px);
+  font-size: 1rem;
+  opacity: 0;
+  transition: all 2s cubic-bezier(0.17, 0.84, 0.44, 1);
+}
+
+.replay:hover {
+  cursor: pointer;
+  border-color: #eebe1f;
+  transform: translateY(150px) scale(1.2);
+}
+
+.opacity1 {
+  opacity: 1;
+}
+
+.opacity2 {
+  opacity: 1;
+}
+
+/*mobileClicks*/
+
+.mobileClicks {
+  position: fixed;
+  display: flex;
+}
+.click1,
+.click2,
+.click3 {
+  flex-grow: 1;
+  z-index: 30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobileClicks img {
+  width: 50px;
+  height: 50px;
+  animation: myfirst 5s ease-out;
+  opacity: 0;
+}
+
+@keyframes myfirst {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.click1,
+.click3 {
+  transform: translateY(200px);
+}
+.click2 {
+  transform: translateY(150px);
+  flex-grow: 1.5;
+}
+
+/*logoTopRight */
+
+.logoTopRight {
+  position: absolute;
+  width: 60px;
+  left: 10px;
+  top: 10px;
+  z-index: 0;
+}

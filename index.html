@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Space Invaders</title>
+  </head>
+  <body>
+    <p style="position: fixed; z-index: 10; color: white; margin: 1rem">
+      <span>Score:</span><span class="scoreEl">0</span>
+    </p>
+    <div class="middleFont1000Class">
+      <img class="middleImg" src="./images/RobinPixel.png" alt="" />
+      <p class="middleFont1000">Euphorie</p>
+    </div>
+    <div class="gameOverScreenOutsideOutside">
+      <div class="gameOverScreenOutside">
+        <p class="gameOver">Game Over!</p>
+        <p class="outNow">Out Now</p>
+        <a
+          href="https://open.spotify.com/artist/5HJnjbg0jin1bXgPVKewQi?si=So8VMe_dS0CDYV2GzRmHuQ&dl_branch=1"
+        >
+          <img class="spotify" src="./images/spotify.svg" alt="" />
+        </a>
+        <button class="replay" onclick="window.location.reload()">
+          replay
+        </button>
+        <span class="scoreEnd">your Score:</span><span class="scoreEl2">0</span>
+      </div>
+    </div>
+
+    <div class="mobileClicks">
+      <div class="click1"><img src="./images/arrowLeft.png" alt="" /></div>
+      <div class="click2"><img src="./images/arrowUp.png" alt="" /></div>
+      <div class="click3"><img src="./images/arrowRight.png" alt="" /></div>
+    </div>
+
+    <img
+      class="logoTopRight"
+      src="/images/AlienSurfGirl_Logotype_white.svg"
+      alt=""
+    />
+
+    <canvas> </canvas>
+    <script src="app.js"></script>
+  </body>
+</html>
