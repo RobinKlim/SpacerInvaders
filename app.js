@@ -260,8 +260,11 @@ class Grid {
     }
   }
 }
-
-logoTopRight.style.left = window.innerWidth / 2 + 218 + "px";
+if (window.innerWidth > 576) {
+  logoTopRight.style.left = window.innerWidth / 2 + 218 + "px";
+} else {
+  logoTopRight.style.left = canvas.width - 70 + "px";
+}
 
 const player = new Player();
 const projectiles = [];
