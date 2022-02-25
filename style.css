@@ -236,6 +236,7 @@ body {
 .logoTopRight {
   position: absolute;
   width: 60px;
+  height: 60px;
   left: 10px;
   top: 10px;
   z-index: 30;
